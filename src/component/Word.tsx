@@ -11,7 +11,6 @@ export interface IWord {
     isDone:boolean,
 }
 
-
 export default function Word({item : w}:IProps){
     const [item,setItem] = useState(w);
     const [isShow,setIsShow] = useState(false);

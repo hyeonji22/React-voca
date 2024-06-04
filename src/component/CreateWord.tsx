@@ -10,20 +10,35 @@ export default function CreateWord(){
 
     //페이지 이동
     const navigate  = useNavigate();
-    //포커스 줄때 사용 
+    //값 가져올때 사용
     const engRef = useRef<HTMLInputElement>(null);
     const korRef = useRef<HTMLInputElement>(null);
     const dayRef = useRef<HTMLSelectElement>(null);
 
     //기본 Submit 막기   폼이벤트 type
     function onSubmit(e :React.FormEvent){
+
         e.preventDefault();
-        if(!isLoading && dayRef.current && engRef.current && korRef.current){ //통신여러번 방지
+        if(!isLoading){ //통신여러번 방지
             setIsLoading(true);
+            console.log(engRef.current)
+            if(engRef.current === null){
+                console.log("gg");
+                return false;
+            }
+            if(korRef.current === null){
+                console.log("gg");
+                return false;
+            }
+            if(dayRef.current === null){
+                console.log("gg");
+                return false;
+            }
+
             const day = dayRef.current.value;
             const eng = engRef.current.value;
             const kor = korRef.current.value;
-
+    
         fetch(`http://localhost:3001/words`,{
             method:"POST",
             headers:{
@@ -50,11 +65,11 @@ export default function CreateWord(){
         <form onSubmit={onSubmit}>
             <div className="input_area">
                 <label>Eng</label>
-                <input type="text" placeholder="conputer" ref={engRef}></input>
+                <input type="text" placeholder="ex.computer" ref={engRef}></input>
             </div>
             <div className="input_area">
                 <label>Kor</label>
-                <input type="text" placeholder="conputer" ref={korRef}></input>
+                <input type="text" placeholder="ex.컴퓨터" ref={korRef}></input>
             </div>
             <div className="input_area">
                 <label>Day</label>

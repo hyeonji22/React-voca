@@ -29,7 +29,7 @@
       "day": 7
     },
     {
-      "id": "17d1",
+      "id": "9caf",
       "day": 8
     }
   ],
@@ -165,7 +165,7 @@
       "day": "1",
       "eng": "ㅎㅎ",
       "kor": "ㅎㅎ",
-      "isDone": false
+      "isDone": true
     },
     {
       "id": "fa91",
@@ -179,6 +179,48 @@
       "day": "1",
       "eng": "ㅇㅇ",
       "kor": "ㅇㄹㅇㄹ",
+      "isDone": false
+    },
+    {
+      "id": "f1f5",
+      "day": "1",
+      "eng": "",
+      "kor": "",
+      "isDone": false
+    },
+    {
+      "id": "24f9",
+      "day": "1",
+      "eng": "ggg",
+      "kor": "gg",
+      "isDone": false
+    },
+    {
+      "id": "03b6",
+      "day": "1",
+      "eng": "",
+      "kor": "",
+      "isDone": false
+    },
+    {
+      "id": "bf43",
+      "day": "1",
+      "eng": "fff",
+      "kor": "fff",
+      "isDone": false
+    },
+    {
+      "id": "a408",
+      "day": "1",
+      "eng": "",
+      "kor": "",
+      "isDone": false
+    },
+    {
+      "id": "89f0",
+      "day": "1",
+      "eng": "gg",
+      "kor": "ㅎㅎ",
       "isDone": false
     }
   ]
